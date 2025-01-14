@@ -1,0 +1,136 @@
+/* Styling for the entire page */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9; /* Lysere baggrund */
+    color: #333;
+}
+
+/* Styling for the header */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #444;
+}
+
+/* Styling for the form */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Hvid baggrund */
+    border-radius: 10px; /* Rundere hjørner */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Større skyggeeffekt */
+}
+
+/* Styling for input fields in the form */
+input[type="text"], input[type="radio"] {
+    width: calc(100% - 20px); /* Justeret bredde */
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc; /* Lysere grænsefarve */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Let grå baggrund for input */
+}
+
+input[type="radio"] {
+    width: auto;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* Styling for the button in the form */
+button {
+    padding: 12px 20px;
+    background-color: #007bff; /* Blå farve for knapper */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Mere rundede knapper */
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Mørkere blå ved hover */
+}
+
+/* Styling for the questions list */
+#questions-list {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.question-item {
+    background-color: #ffffff; /* Hvid baggrund for spørgsmål */
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Mere markant skygge */
+}
+
+.question-item p {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+    color: #333; /* Mørk tekstfarve */
+}
+
+.question-item ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.question-item button {
+    background-color: #28a745; /* Grøn farve for svarknapper */
+    color: white;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.question-item button:hover {
+    background-color: #218838; /* Mørkere grøn ved hover */
+}
+
+/* Styling for the Player list */
+#player-list {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.player-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+}
+
+.player-item button {
+    padding: 6px 12px;
+    background-color: #28a745; /* Grøn farve for correct/incorrect knapper */
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.player-item button:hover {
+    background-color: #218838; /* Mørkere grøn ved hover */
+}
+
+hr {
+    margin: 20px 0;
+    border-top: 1px solid #ddd;
+}
