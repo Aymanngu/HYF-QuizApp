@@ -1,0 +1,74 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App with Players</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Quiz App</h1>
+
+    <!-- Player Section -->
+    <div>
+        <h2>Players</h2>
+        <input type="text" id="player1-name" placeholder="Enter Player 1 Name" required />
+        <input type="text" id="player2-name" placeholder="Enter Player 2 Name" required />
+        <button id="start-quiz-button">Start Quiz</button>
+    </div>
+
+    <hr />
+
+    <!-- Player Scores -->
+    <div id="player-list"></div>
+
+    <hr />
+
+    <!-- Form to add a quiz question -->
+    <form id="quiz-form">
+        <h2>Add a Question</h2>
+        <div>
+            <label for="question">Question:</label>
+            <input type="text" id="question" placeholder="Enter your question" required />
+        </div>
+        <div>
+            <label for="optionA">Option A:</label>
+            <input type="text" id="optionA" placeholder="Enter option A" required />
+            <input type="radio" name="correct" value="1" required /> Correct
+        </div>
+        <div>
+            <label for="optionB">Option B:</label>
+            <input type="text" id="optionB" placeholder="Enter option B" required />
+            <input type="radio" name="correct" value="2" /> Correct
+        </div>
+        <div>
+            <label for="optionC">Option C:</label>
+            <input type="text" id="optionC" placeholder="Enter option C" required />
+            <input type="radio" name="correct" value="3" /> Correct
+        </div>
+        <div>
+            <label for="optionD">Option D:</label>
+            <input type="text" id="optionD" placeholder="Enter option D" required />
+            <input type="radio" name="correct" value="4" /> Correct
+        </div>
+        <button type="submit">Add Question</button>
+    </form>
+
+    <hr />
+
+    <!-- Search field to filter questions -->
+    <div>
+        <input type="text" id="search-input" placeholder="Search questions" />
+        <button id="search-button">Search</button>
+    </div>
+
+    <hr />
+
+    <!-- Section where added questions will be displayed -->
+    <div id="questions-list"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
